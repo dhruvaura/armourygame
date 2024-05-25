@@ -10,7 +10,7 @@
 5. Dependency Inversion Principle (USED IN implementation)
 
 
-Providing here One Example of each Solid Principle.
+Providing here One Example of each Solid Principle. Examples are different that actual implementation, examples are just for understanding.
 
 
 
