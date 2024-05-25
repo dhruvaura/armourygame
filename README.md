@@ -7,7 +7,7 @@
 2. Open/Closed Principle (OCP) (NOT USED IN implementation)
 3. Liskov Substitution Principle  (NOT USED IN implementation)
 4. Interface Segregation Principle (USED IN implementation)
-5. Dependency Inversion Principle (USED IN implementation)
+5. Dependency Inversion Principle (USED IN implementation) (Not used any DI Framework, Presently manually injected dependency in code. Later when have time I'll add some implementation which use DI framework like Zenject, Ninject and etc...)
 
 
 Providing here One Example of each Solid Principle. Examples are different that actual implementation, examples are just for understanding.
