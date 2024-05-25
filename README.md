@@ -13,6 +13,7 @@
 Providing here One Example of each Solid Principle.
 
 
+
 1. Single Responsibility Principle
    
    Each class should only have one responsibility or functionality. 
@@ -101,6 +102,8 @@ Providing here One Example of each Solid Principle.
     	````
    	^ above each class has a single, well-defined responsibility, making the codebase easier to understand, maintain, and test. 
 
+
+
 2. Open Close Principle (OCP)
 
 	You should be able to add new functionality to a class without changing its existing code. This can typically be achieved through inheritance, interfaces, and abstraction. 
@@ -130,9 +133,10 @@ Providing here One Example of each Solid Principle.
     	```
    
 	Here, you can add new enemy types by extending the Enemy class without modifying it.
-   
 
-3. Liskov Substitution Principle (LSP)
+
+
+4. Liskov Substitution Principle (LSP)
 
    Subclasses should be able to substitute their parent classes without causing issues in the implementation. 
    This means that subclasses should extend the functionality of a superclass without changing its expected behavior.
@@ -174,7 +178,8 @@ Providing here One Example of each Solid Principle.
    Dinosaur and Dragon can replace Enemy without breaking the expected behavior.
 
 
-4. Interface Segregation Principle (ISP)
+
+5. Interface Segregation Principle (ISP)
 	
      Separating features into different interfaces.
 
@@ -213,7 +218,7 @@ Providing here One Example of each Solid Principle.
 	Warrior implements both IAttack and IDefend, while Archer only implements IAttack.
 			
 
-5. Dependency Inversion Principle (DIP)
+6. Dependency Inversion Principle (DIP)
 
     The Dependency Inversion Principle (DIP) helps create a flexible, decoupled, and maintainable codebase by ensuring that high-level modules depend on abstractions rather than concrete implementations.
 
