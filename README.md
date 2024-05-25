@@ -15,10 +15,10 @@ Providing here One Example of each Solid Principle.
 
 1. Single Responsibility Principle
    
-    	Each class should only have one responsibility or functionality. 
-    	By follow to SRP, you ensure that each class has a single focus, which makes the code easier to understand, maintain, and test.
-    
-    ```
+   Each class should only have one responsibility or functionality. 
+   By follow to SRP, you ensure that each class has a single focus, which makes the code easier to understand, maintain, and test.
+   
+    	```
     	public class PlayerController : MonoBehaviour
     	{
     		private PlayerInput playerInput;
@@ -98,13 +98,14 @@ Providing here One Example of each Solid Principle.
     		}
     	}
     
-    ```
-    		^ above each class has a single, well-defined responsibility, making the codebase easier to understand, maintain, and test. 
+    	```
+   	^ above each class has a single, well-defined responsibility, making the codebase easier to understand, maintain, and test. 
 
 2. Open Close Principle (OCP)
 
-    	You should be able to add new functionality to a class without changing its existing code. This can typically be achieved through inheritance, interfaces, and abstraction. 
-    	By following OCP, you can extend a class's behavior without risking breaking the existing functionality.
+	You should be able to add new functionality to a class without changing its existing code. This can typically be achieved through inheritance, interfaces, and abstraction. 
+	By following OCP, you can extend a class's behavior without risking breaking the existing functionality.
+   
     	```
     	public abstract class Enemy : MonoBehaviour
     	{
@@ -127,9 +128,9 @@ Providing here One Example of each Solid Principle.
     		}
     	}
     	```
-     Here, you can add new enemy types by extending the Enemy class without modifying it.
-
-
+   
+	Here, you can add new enemy types by extending the Enemy class without modifying it.
+   
 
 3. Liskov Substitution Principle (LSP)
 
@@ -137,45 +138,46 @@ Providing here One Example of each Solid Principle.
    This means that subclasses should extend the functionality of a superclass without changing its expected behavior.
 
     ```
-    	public abstract class Enemy : MonoBehaviour
-    	{
-    		public abstract void Attack();
-    		public virtual void Move()
-    		{
-    			Debug.Log("Enemy moves");
-    		}
-    	}
-    
-    	public class Dinosaur : Enemy
-    	{
-    		public override void Attack()
-    		{
-    			Debug.Log("Dinosaur attacks!");
-    		}
-    
-    		public override void Move()
-    		{
-    			Debug.Log("Dinosaur moves quickly");
-    		}
-    	}
-    
-    	public class Dragon : Enemy
-    	{
-    		public override void Attack()
-    		{
-    			Debug.Log("Dragon attacks!");
-    		}
-    
-    		// Dragon does not override Move, uses base implementation
-    	}
+	public abstract class Enemy : MonoBehaviour
+	{
+		public abstract void Attack();
+		public virtual void Move()
+		{
+			Debug.Log("Enemy moves");
+		}
+	}
+	
+	public class Dinosaur : Enemy
+	{
+		public override void Attack()
+		{
+			Debug.Log("Dinosaur attacks!");
+		}
+	
+		public override void Move()
+		{
+			Debug.Log("Dinosaur moves quickly");
+		}
+	}
+	
+	public class Dragon : Enemy
+	{
+		public override void Attack()
+		{
+			Debug.Log("Dragon attacks!");
+		}
+	
+		// Dragon does not override Move, uses base implementation
+	}
     ```
 
-		Goblin and Orc can replace Enemy without breaking the expected behavior.
+   Dinosaur and Dragon can replace Enemy without breaking the expected behavior.
 
 
 4. Interface Segregation Principle (ISP)
 	
      Separating features into different interfaces.
+
     	```
     	public interface IAttack
     	{
@@ -207,15 +209,15 @@ Providing here One Example of each Solid Principle.
     			Debug.Log("Archer attacks from distance!");
     		}
     	}
-    ```
-    Warrior implements both IAttack and IDefend, while Archer only implements IAttack.
+    	```
+	Warrior implements both IAttack and IDefend, while Archer only implements IAttack.
 			
 
-6. Dependency Inversion Principle (DIP)
+5. Dependency Inversion Principle (DIP)
 
     The Dependency Inversion Principle (DIP) helps create a flexible, decoupled, and maintainable codebase by ensuring that high-level modules depend on abstractions rather than concrete implementations.
 
-    ```
+    	```
     	public interface IWeapon
     	{
     		void Use();
@@ -258,10 +260,11 @@ Providing here One Example of each Solid Principle.
     			}
     		}
     	}
-    ```
-    Used an interface (IWeapon) to decouple the Player class from concrete weapon implementations (Sword, Bow).
-    High-Level Module: The Player class depends on the IWeapon interface rather than concrete weapon classes.
-    Low-Level Modules: The Sword and Bow classes implement the IWeapon interface.
+    	```
+    
+	Used an interface (IWeapon) to decouple the Player class from concrete weapon implementations (Sword, Bow).
+    	High-Level Module: The Player class depends on the IWeapon interface rather than concrete weapon classes.
+    	Low-Level Modules: The Sword and Bow classes implement the IWeapon interface.
 
 
 
