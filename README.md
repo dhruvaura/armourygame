@@ -18,7 +18,7 @@ Providing here One Example of each Solid Principle.
    Each class should only have one responsibility or functionality. 
    By follow to SRP, you ensure that each class has a single focus, which makes the code easier to understand, maintain, and test.
    
-    	```
+    	````
     	public class PlayerController : MonoBehaviour
     	{
     		private PlayerInput playerInput;
@@ -98,7 +98,7 @@ Providing here One Example of each Solid Principle.
     		}
     	}
     
-    	```
+    	````
    	^ above each class has a single, well-defined responsibility, making the codebase easier to understand, maintain, and test. 
 
 2. Open Close Principle (OCP)
