@@ -1,4 +1,4 @@
-# armourygame type implementation that show some of SOLID principle practical usage. So It will helpful to learn practically instead of just read theoretically. 
+# armourygame type implementation that show some of SOLID principle practical usage.
 
 
  Demonstrate how to use SOLID principles in implementation.
@@ -107,26 +107,26 @@ Providing here One Example of each Solid Principle.
 	By following OCP, you can extend a class's behavior without risking breaking the existing functionality.
    
     	```
-    	public abstract class Enemy : MonoBehaviour
-    	{
-    		public abstract void Attack();
-    	}
-    
-    	public class Dinosaur : Enemy
-    	{
-    		public override void Attack()
-    		{
-    			Debug.Log("Doblin attacks!");
-    		}
-    	}
-    
-    	public class Dragon : Enemy
-    	{
-    		public override void Attack()
-    		{
-    			Debug.Log("Dragon attacks!");
-    		}
-    	}
+	    	public abstract class Enemy : MonoBehaviour
+	    	{
+	    		public abstract void Attack();
+	    	}
+	    
+	    	public class Dinosaur : Enemy
+	    	{
+	    		public override void Attack()
+	    		{
+	    			Debug.Log("Doblin attacks!");
+	    		}
+	    	}
+	    
+	    	public class Dragon : Enemy
+	    	{
+	    		public override void Attack()
+	    		{
+	    			Debug.Log("Dragon attacks!");
+	    		}
+	    	}
     	```
    
 	Here, you can add new enemy types by extending the Enemy class without modifying it.
